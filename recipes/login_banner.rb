@@ -13,6 +13,7 @@
 # - Remove OS Information from Login Warning Banners
 
 template "motd" do
+  source "motd.erb"
   path "/etc/motd"
   owner "root"
   group "root"
@@ -23,6 +24,7 @@ template "motd" do
 end
 
 template "issue" do
+  source "issue.erb"
   path "/etc/issue"
   owner "root"
   group "root"
@@ -33,6 +35,7 @@ template "issue" do
 end
 
 template "issue.net" do
+  source "issue.net.erb"
   path "/etc/issue.net"
   owner "root"
   group "root"

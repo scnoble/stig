@@ -212,9 +212,8 @@ default['stig']['login_defs']['pass_min_days'] = 1
 default['stig']['login_defs']['pass_warn_age'] = 15
 
 # Set the login banner(s)
-default['stig']['login_banner']['motd'] = ""
-default['stig']['login_banner']['issue'] = default['stig']['login_banner']['motd']
-default['stig']['login_banner']['issue_net'] = default['stig']['login_banner']['motd']
+default['stig']['login_banner']['issue'] = ""
+default['stig']['login_banner']['issue_net'] = ""
 
 # The address the the mail transfer agent should listen on
 default["stig"]["mail_transfer_agent"]["inet_interfaces"] = "127.0.0.1"
